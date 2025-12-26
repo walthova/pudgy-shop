@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap');
+
+:root {
+  /* Divine Pop Palette */
+  --ibg-blue: #0062FF;
+  --ibg-blue-hover: #004ECC;
+  --ibg-gold: #FFB800;
+  --ibg-text: #051633;
+  --ibg-bg: #F8FAFF;
+  --ibg-card-bg: #FFFFFF;
+
+  --radius-gallery: 2.5rem;
+  --shadow-divine: 0 20px 60px -15px rgba(0, 98, 255, 0.15);
+  --shadow-divine-hover: 0 40px 80px -20px rgba(0, 98, 255, 0.25);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--ibg-text);
+  background-color: var(--ibg-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.gallery-card {
+  background: var(--ibg-card-bg);
+  border-radius: var(--radius-gallery);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 4px solid transparent;
+}
+
+.gallery-card:hover {
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-divine-hover);
+  border-color: var(--ibg-blue);
+}
+
+.btn-divine {
+  background: var(--ibg-blue);
+  color: white;
+  border-radius: 9999px;
+  padding: 1.25rem 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 98, 255, 0.3);
+}
+
+.btn-divine:hover {
+  background: var(--ibg-blue-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 98, 255, 0.4);
+}
+
+.badge-relic {
+  background: var(--ibg-gold);
+  color: var(--ibg-text);
+  font-weight: 900;
+  border-radius: 9999px;
+  padding: 0.4rem 1rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 5px 15px rgba(255, 184, 0, 0.3);
+}
+
+/* Glassmorphism Classes */
+.glass-header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ibg-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0E7FF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C7D2FE;
+}
